@@ -1,0 +1,23 @@
+Test Case ID: SCA02
+
+Test Scenario: Number button turn color when pressed
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+1- click all buttons
+2- See if they change color when pressed
+
+Expected Results:
+Button turns dark to indicate it has been clicked
+
+Actual Results:
+As expected
+
+Pass/Fail:
+Pass

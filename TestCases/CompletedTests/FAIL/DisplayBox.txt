@@ -1,0 +1,29 @@
+Test Case ID: SCA06
+
+Test Scenario: Display box boundary
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+1- Type in numbers with more than 8 digits to go over the border.
+2- Enter a formula with the result being greater than 8 digits.
+
+Test Data:
+Input 123456789
+Input 10000 x 123456789
+Input 10 x 123456789
+
+Expected Results:
+Numbers should be shown within the display box 
+
+Actual Results:
+Numbers typed in greater than 8 digits are displayed outside of box
+Formulas with a result greater than 8 digits display only 9 digits
+
+Pass/Fail:
+Fail

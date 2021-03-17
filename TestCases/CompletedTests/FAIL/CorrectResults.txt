@@ -1,0 +1,31 @@
+Test Case ID: SCA09
+
+Test Scenario: Correct answers are displayed
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+Input formulas
+
+Test Data:
+8 + 8 = 
+8 x 8 = 
+1000000 x 1000 = 
+
+Expected Results:
+16
+64
+1000000000
+
+Actual Results:
+16
+16
+1001000
+
+Pass/Fail:
+Fail

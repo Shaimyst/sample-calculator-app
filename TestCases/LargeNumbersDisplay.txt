@@ -1,0 +1,20 @@
+Test Case ID: SCA07
+
+Test Scenario: 
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+
+Test Data:
+
+Expected Results:
+
+Actual Results:
+
+Pass/Fail:

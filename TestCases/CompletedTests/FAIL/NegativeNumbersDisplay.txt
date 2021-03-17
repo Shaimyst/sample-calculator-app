@@ -1,0 +1,28 @@
+Test Case ID: SCA08
+
+Test Scenario: Negative numbers displayed with negative sign before number
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+Input negative number
+Input formulas resulting in negative number
+
+Test Data:
+-1000
+10 - 20 = 
+
+Expected Results:
+-1000 and -10
+
+Actual Results:
+NaN
+-10
+
+Pass/Fail:
+Fail

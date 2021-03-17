@@ -1,0 +1,28 @@
+Test Case ID: SCA04
+
+Test Scenario: AC button click clears display operator
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+Input different formulas then clear them with AC button
+
+Test Data:
+7, AC
+100 x 100 = , AC
+100000 x 1000000 = , AC
+-1000 x .1000 = , AC
+
+Expected Results:
+Display box should be cleared
+
+Actual Results:
+As expected
+
+Pass/Fail:
+Pass

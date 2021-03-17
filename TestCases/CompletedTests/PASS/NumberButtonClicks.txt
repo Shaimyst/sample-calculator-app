@@ -1,0 +1,23 @@
+Test Case ID: SCA01
+
+Test Scenario: Number button clicks display number
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+1- click all buttons
+
+Expected Results:
+Button turns dark to indicate it has been clicked
+Number or sign is displayed at the top
+
+Actual Results:
+As expected
+
+Pass/Fail:
+Pass

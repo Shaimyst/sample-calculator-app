@@ -1,0 +1,24 @@
+Test Case ID: SCA03
+
+Test Scenario: Button has border when pressed
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+1- click all buttons
+2- See if they have a border when pressed
+
+Expected Results:
+Button will have a black border when pressed
+
+Actual Results:
+As expected
+
+Pass/Fail:
+Pass
+

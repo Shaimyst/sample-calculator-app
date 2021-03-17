@@ -1,0 +1,23 @@
+Test Case ID: SCA05
+
+Test Scenario: Operator button clicks display operator
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000
+
+Test Steps:
+Select all operator buttons
+Input formulas including all operator buttons
+
+Expected Results:
+Operator buttons show in display box when pressed
+
+Actual Results:
+Operators are displayed when selected
+
+Pass/Fail:
+Pass
