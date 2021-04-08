@@ -1,0 +1,17 @@
+
+Test Scenario: Math results are correct
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000")
+
+Test data used: 8 × 8 =
+Expected results: 64
+Results given: 16
+Traceback (most recent call last):
+  File "test_correctResults.py", line 58, in <module>
+    assert result == "64", "FAIL"
+AssertionError: FAIL
