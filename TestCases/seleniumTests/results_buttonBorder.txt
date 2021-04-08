@@ -1,0 +1,14 @@
+
+Test Scenario: Button has border when pressed
+
+Pre conditions:
+Open terminal
+Go to sample-calculator-app in terminal
+Repository is downloaded from GitHub.com
+spin-up with command: make dev
+navigate to localhost:5000")
+
+Test data used: ÷
+Expected results: Button will have a black border when clicked
+Border properties : 4px solid rgb(0, 0, 0)
+Test Results: PASS

@@ -19,6 +19,9 @@ division_button = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[1
 driver.find_element_by_xpath("/html/body/main/div/div[3]/div[1]/button").click()
 result = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
 
+cssValue = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[1]/button").value_of_css_property("border")
+
+
 #print test template text
 testText = """
 Test Scenario: Button has border when pressed
@@ -35,6 +38,7 @@ print(testText)
 #print which buttons were pressed
 print("Test data used:", division_button)
 print("Expected results: Button will have a black border when clicked")
+print("Border properties : "+ cssValue)
 
 #save screenshot
 driver.save_screenshot('/Users/jessicasadler/git/sample-calculator-app/TestCases/seleniumTests/screenshots/screenshot_buttonBorder.png')
@@ -43,7 +47,10 @@ driver.save_screenshot('/Users/jessicasadler/git/sample-calculator-app/TestCases
 driver.quit()
 
 #assert expected results vs actual result
-print("Actual results:")
+if cssValue is not None:
+    print("Test Results: PASS")
+else:
+    print("Test Results: FAIL")
 
 #create test results document
 #print test description and results
