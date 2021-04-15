@@ -15,6 +15,7 @@ driver.get("http://localhost:5000")
 #maximize window
 driver.maximize_window
 
+# enter test data
 driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button").click()
 driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button").click()
 driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button").click()
@@ -27,7 +28,7 @@ driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button").click()
 
 #in case you want to use the display box class, it is "display svelte-1vxpxqz"
 displayBox = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
-print("Test example used is:" + displayBox)
+print("Test data used:" + displayBox)
 
 #save screenshot
 driver.save_screenshot('/Users/jessicasadler/git/sample-calculator-app/TestCases/seleniumTests/screenshots/screenshot_displayBoxDoesntOverflow.png')
