@@ -15,17 +15,20 @@ driver.get("http://localhost:5000")
 #maximize window
 driver.maximize_window
 
-    # find all elements of an object using:
-    # print(dir(t))
+# loop for finding all buttons and printing buttons clicked
+# tags = driver.find_elements_by_tag_name('button')
 
-tags = driver.find_elements_by_tag_name('button')
+# for t in tags:
+#     t.click()
+#     print("clicked: " + t.text + " is a " + t.tag_name)
 
-for t in tags:
-    t.click()
-    print("clicked: " + t.text + " is a " + t.tag_name)
+# 7 xpath is /html/body/main/div/div[2]/div[1]/button
+
+# get css value button color
+# click
+# get color
 
 # return any errors
-# find out why it's clicking every button twice
 
 #close browser
 driver.quit()
