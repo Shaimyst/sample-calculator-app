@@ -15,17 +15,17 @@ driver.get("http://localhost:5000")
 #maximize window
 driver.maximize_window
 
-    # find all elements of an object using:
-    # print(dir(t))
+# find all elements of an object using:
+# print(dir(t))
 
 tags = driver.find_elements_by_tag_name('button')
 
 for t in tags:
     t.click()
-    print("clicked: " + t.text + " is a " + t.tag_name)
-
-# return any errors
-# find out why it's clicking every button twice
+    tagname = t.tag_name
+    print(t.text + " is a " + t.tag_name)
 
 #close browser
 driver.quit()
+
+assert tagname == "button", "Not a button"
