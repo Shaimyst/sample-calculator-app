@@ -28,4 +28,6 @@ for t in tags:
 #close browser
 driver.quit()
 
+# change
 assert tagname == "button", "Not a button"
+# calc should have a certain amount of buttons have assertion report the correct amount.
