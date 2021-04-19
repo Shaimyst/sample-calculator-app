@@ -3,6 +3,8 @@ from selenium import webdriver
 import pytest
 import time
 
+# this test tests the multiplication function
+ 
 # open virtual environment in terminal with source env/bin/activate
 # spin up in terminal with make dev
 # spin down with control c

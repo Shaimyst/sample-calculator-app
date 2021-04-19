@@ -2,6 +2,8 @@ import os
 from selenium import webdriver
 import pytest
 
+# this test tests large number input verses what the display box shows
+
 # open virtual environment in terminal with source env/bin/activate
 # spin up in terminal with make dev
 # spin down with control c

@@ -3,6 +3,8 @@ from selenium import webdriver
 import pytest
 import time
 
+# this test confirms buttons have a black border
+
 # open virtual environment in terminal with source env/bin/activate
 # spin up in terminal with make dev
 # spin down with control c

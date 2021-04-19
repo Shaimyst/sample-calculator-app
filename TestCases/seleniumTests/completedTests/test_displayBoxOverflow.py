@@ -2,6 +2,8 @@ import os
 from selenium import webdriver
 import pytest
 
+# this test tests if input runs outside of the display box
+
 # open virtual environment in terminal with source env/bin/activate
 # spin up in terminal with make dev
 # spin down with control c
