@@ -9,9 +9,6 @@ os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get("http://localhost:5000")
 
-#maximize window
-driver.maximize_window
-
 # loop for finding all buttons and button colors before/after click
 tags = driver.find_elements_by_tag_name('button')
 

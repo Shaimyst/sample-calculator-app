@@ -9,9 +9,6 @@ os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get("http://localhost:5000")
 
-#maximize window
-driver.maximize_window
-
 # enter test data
 # Type more than 8 characters as max limit should be 8
 

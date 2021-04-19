@@ -9,9 +9,6 @@ os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get("http://localhost:5000")
 
-#maximize window
-driver.maximize_window
-
 # find all elements of an object using:
 # print(dir(t))
 

@@ -10,9 +10,6 @@ os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get("http://localhost:5000")
 
-#maximize window
-driver.maximize_window
-
 # open browser and click '8 x 8 =' expected result '64'
 
 eight_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button").text

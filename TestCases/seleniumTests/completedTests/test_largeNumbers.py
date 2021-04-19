@@ -9,9 +9,6 @@ os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get("http://localhost:5000")
 
-#maximize window
-driver.maximize_window
-
 #test the display of large numbers
 #input one digit, call back what display box shows, continue loop until it says 'infinity'
 eight_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button")
