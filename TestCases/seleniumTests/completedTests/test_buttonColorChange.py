@@ -3,7 +3,7 @@ from selenium import webdriver
 import pytest
 import time
 
-# this test tests for all button color changes
+# this tests all button color changes
 
 # open virtual environment in terminal with source env/bin/activate
 # spin up in terminal with make dev
