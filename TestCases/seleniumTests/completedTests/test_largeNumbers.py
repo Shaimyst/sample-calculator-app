@@ -4,10 +4,6 @@ import pytest
 
 # this tests large number input verses what the display box shows
 
-# open virtual environment in terminal with source env/bin/activate
-# spin up in terminal with make dev
-# spin down with control c
-
 chromedriver = "/usr/local/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)

@@ -5,10 +5,6 @@ import time
 
 # this tests all button color changes
 
-# open virtual environment in terminal with source env/bin/activate
-# spin up in terminal with make dev
-# spin down with control c
-
 chromedriver = "/usr/local/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)

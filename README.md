@@ -7,16 +7,15 @@ navigate to `localhost:5000`
 
 spin-down with mac OS key command: `control+c`
 
-## Testing Needed!
+## Versions used
+Python 3.7.3
+pytest 6.2.2
 
-This sample calculator application has bugs and needs to be tested.
-
-### Please test:
-1. number button clicks display number (am I missing anything here??)
-2. operator button clicks display operator
-3. "AC" button click clears calculations and displays "0"
-4. number->operator->number->equals sequences display proper calculated value
-5. buttons should appear a darker shade of color when focused
-6. buttons should have a black border when focused
-
-...any more you can think of?
+### Selenium Tests include:
+1. ac button test - confirms AC button returns display to "0"
+2. all buttons test - finds all buttons in the app and clicks them. Returns the number of buttons (should be 16). There is a line (commented out) to list which buttons were found and confirms they show up in the display box.
+3. button border test - confirms all buttons have a black border
+4. button color change test - confirms all buttons change color when clicked
+5. correct results - tests a multiplication problem and checks the result
+6. display box overflow - tests if number run over the display box's border
+7. large numbers test - tests the boundaries of inputting large numbers and comparing what is shown in the display box
