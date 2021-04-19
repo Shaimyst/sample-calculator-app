@@ -1,7 +1,6 @@
 import os
 from selenium import webdriver
 import pytest
-import time
 
 # this tests all button color changes
 
