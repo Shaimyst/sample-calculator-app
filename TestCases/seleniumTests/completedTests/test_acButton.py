@@ -1,36 +1,40 @@
 import os
 from selenium import webdriver
-import pytest
+# import pytest
 
 # this test confirms AC button clears the display box
 
+# open browser
 chromedriver = "/usr/local/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get("http://localhost:5000")
 
-#enter test data
-eight_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button")
-ac_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[2]/button")
+# begin test
+def test_ac_button():
 
-for i in range(3):
-    eight_button.click()
+    # enter test data
+    eight_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button")
+    ac_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[2]/button")
 
-# Get the typed value
-display1 = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
+    for i in range(3):
+        eight_button.click()
 
-#press AC button
-ac_button.click()
+    # Get the typed value
+    display1 = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
 
-# Get the typed value
-display2 = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
+    # press AC button
+    ac_button.click()
 
-#return what is displayed
-print("Test data entered: " + display1)
-print("Data shown after clicking AC button: " + display2)
+    # Get the typed value
+    display2 = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
 
-#close browser
-driver.quit()
+    # return what is displayed
+    # print("Test data entered: " + display1)
+    # print("Data shown after clicking AC button: " + display2)
 
-#assert display is 0
-assert display2 == str(0), "Display box did not clear!"
+    # close browser
+    driver.quit()
+
+    # assert display is 0
+    assert display2 == str(0), "Display box did not clear!"
