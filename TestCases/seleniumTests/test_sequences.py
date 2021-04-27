@@ -68,8 +68,6 @@ def test_c():
     # assert
     assert result == "-1", "Incorrect answer"
     
-# enter '7 + 7 =' , when answer shows, then enter '5'
-
 # enter '6 - 9 =' , expected answer '-3'
 def test_d():
     ac_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[2]/button")
@@ -85,8 +83,25 @@ def test_d():
     equal_button.click()
     result = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
 
+    # assert
+    assert result == '-3', "Incorrect answer"
+
+# enter '7 + 7 =' , when answer shows, then enter '5'
+def test_e():
+    ac_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[2]/button")
+    seven_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[1]/button")
+    add_button = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[4]/button")
+    equal_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[1]/button")
+
+    ac_button.click()
+    seven_button.click()
+    add_button.click()
+    seven_button.click()
+    equal_button.click()
+    result = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
+
     # close browser
     driver.quit()
 
     # assert
-    assert result == '-3', "Incorrect answer"
+    assert result == '14', "Incorrect answer"
