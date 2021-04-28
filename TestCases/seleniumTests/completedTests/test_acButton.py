@@ -1,5 +1,7 @@
 import os
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
 # import pytest
 
 # this test confirms AC button clears the display box
@@ -7,7 +9,9 @@ from selenium import webdriver
 # open browser
 chromedriver = "/usr/local/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
-driver = webdriver.Chrome(chromedriver)
+options = Options()
+options.headless = True
+driver = webdriver.Chrome(chromedriver, options=options)
 driver.get("http://localhost:5000")
 
 # begin test
