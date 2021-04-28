@@ -1,3 +1,11 @@
+# npm Installs
+Package            Version
+------------------ -------
+pip                21.0.1
+pytest             6.2.3
+pytest-sugar       0.9.4
+python             3.7.3
+selenium           3.141.0
 
 # Sample Calculator Application
 
@@ -7,15 +15,16 @@ navigate to `localhost:5000`
 
 spin-down with mac OS key command: `control+c`
 
-## Versions used
+## sequence of commands to run pipenv
+install pipenv with command: pipenv install
+open a virtual environment with: pipenv shell
 
-Package            Version
------------------- -------
-pip                21.0.1
-pytest             6.2.3
-pytest-sugar       0.9.4
-python             3.7.3
-selenium           3.141.0
+## instructions for installing chromedriver
+install with home brew: brew cask install chromedriver
+or using npm: npm install chromedriver
+
+## run all tests through pytest using command 'pytest'
+using the command 'pytest' will run all files of the form test_*.py or *_test.py in the current directory and its subdirectories.
 
 ### Selenium Tests include:
 1. ac button test - confirms AC button returns display to "0"
