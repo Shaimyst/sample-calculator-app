@@ -16,8 +16,11 @@ navigate to `localhost:5000`
 spin-down with mac OS key command: `control+c`
 
 ## sequence of commands to run pipenv
-install pipenv with command: pipenv install
-open a virtual environment with: pipenv shell
+install pipenv with: brew install pipenv
+setup pipenv virtual-environment for project: pipenv install
+spin-up virtual-environment: pipenv shell
+do python package installs within virtual-environment ex: pipenv install selenium\
+    (puts selenium in the Pipfile)
 
 ## instructions for installing chromedriver
 install with home brew: brew cask install chromedriver
