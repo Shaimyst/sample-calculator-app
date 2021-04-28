@@ -1,3 +1,10 @@
+# pipenv stuff from scratch
+# install pipenv with: brew install pipenv
+# setup pipenv virtual-environment for project: pipenv install
+# spin-up virtual-environment: pipenv shell
+# do python package installs within virtual-environment ex: pipenv install selenium\
+    # (puts selenium in the Pipfile)
+
 # find element attributes with
 #print(dir(displayBox))
 
