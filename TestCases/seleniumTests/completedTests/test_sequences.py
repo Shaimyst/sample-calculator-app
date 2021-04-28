@@ -1,6 +1,5 @@
 import os
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 import time
 
 # this tests difference sequences
@@ -26,9 +25,7 @@ import time
 # open browser
 chromedriver = "/usr/local/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
-options = Options()
-options.headless = True
-driver = webdriver.Chrome(chromedriver, options=options)
+driver = webdriver.Chrome(chromedriver)
 driver.get("http://localhost:5000")
 
 # begin test
