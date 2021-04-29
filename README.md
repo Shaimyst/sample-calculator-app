@@ -10,15 +10,16 @@ python             3.7.3 or later
 homebrew (mac)     3.1.3 or later
 
 ## sequence of commands to run pipenv
-install pipenv: 
-```sh brew install pipenv```
-setup pipenv virtual-environment for project: 
+install pipenv:   
+```brew install pipenv```
+setup pipenv virtual-environment for project:    
 ```pipenv install```
-spin-up virtual-environment
+spin-up virtual-environment  
 ```pipenv shell```
-do python package installs within virtual-environment
+do python package installs within virtual-environment  
 ```pipenv install selenium\```
-    (puts selenium in the Pipfile)
+    (puts selenium in the Pipfile)  
+    
 
 ## instructions for installing chromedriver
 
