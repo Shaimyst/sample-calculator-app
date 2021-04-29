@@ -1,44 +1,63 @@
 # Sample Calculator Application
 
-## npm Installs
-### Package
--------------------------
- - node 14.16.0 or later
- - npm 6.14.11 or later
- - pip 21.0.1 or later
- - python 3.7.3 or later
- - homebrew (mac) 3.1.3 or later  
 
-## sequence of commands to run pipenv
-install pipenv:   
-```brew install pipenv```  
-  
+## Requirements
+ - homebrew
+ - pipenv
+ - npm
+
+
+---
+
+
+## Initial Setup
+
+### npm installs
+```sh
+npm install
+```
+
+### Install chromedriver
+
+```sh
+brew cask install chromedriver
+```
+
+### Python installs with pipenv
+
 setup pipenv virtual-environment for project:    
-```pipenv install```  
-  
-spin-up virtual-environment  
-```pipenv shell```  
-  
-do python package installs within virtual-environment  
-```pipenv install selenium\```  
-    (puts selenium in the Pipfile)   
+```sh
+pipenv install
+```
+
+spin-up virtual-environment:
+```sh
+pipenv shell
+```
+
+spin-down the virtual-environment:
+```sh
+exit
+```
 
 
-## instructions for installing chromedriver
+---
 
-```brew cask install chromedriver```  
-or using npm  
-```npm install chromedriver```  
 
-## spin-up application
+## Spin-up application
 
-````make dev````  
+Run: `make dev`
   
 navigate to `localhost:5000`  
   
-spin-down with mac OS key command ````control+c````  
+spin-down with mac OS key command: `control+c`
 
-## run all tests through pytest
 
-This will run all files of the form test_*.py or *_test.py in the current directory and its subdirectories.  
-```pytest```
+---
+
+
+## Run Selenium tests
+
+```sh
+pytest
+```
