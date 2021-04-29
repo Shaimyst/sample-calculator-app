@@ -12,10 +12,13 @@
 ## sequence of commands to run pipenv
 install pipenv:   
 ```brew install pipenv```  
+  
 setup pipenv virtual-environment for project:    
 ```pipenv install```  
+  
 spin-up virtual-environment  
 ```pipenv shell```  
+  
 do python package installs within virtual-environment  
 ```pipenv install selenium\```  
     (puts selenium in the Pipfile)   
