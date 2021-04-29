@@ -33,8 +33,7 @@ or using npm
   
 navigate to `localhost:5000`  
   
-spin-down with mac OS key command  
-````control+c````  
+spin-down with mac OS key command ````control+c````  
 
 ## run all tests through pytest
 
