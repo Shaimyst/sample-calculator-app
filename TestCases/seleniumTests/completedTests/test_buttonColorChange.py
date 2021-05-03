@@ -1,14 +1,17 @@
 import os
 from selenium import webdriver
-
-# import pytest
+from selenium.webdriver.chrome.options import Options
+import pytest
 
 # this tests all button color changes
 
 # open browser
 chromedriver = "/usr/local/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
-driver = webdriver.Chrome(chromedriver)
+# run headless
+options = Options()
+options.headless = True
+driver = webdriver.Chrome(chromedriver, options=options)
 driver.get("http://localhost:5000")
 
 # begin test

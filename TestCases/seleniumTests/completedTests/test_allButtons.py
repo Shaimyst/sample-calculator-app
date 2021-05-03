@@ -1,13 +1,14 @@
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-# import pytest
+import pytest
 
 # this test finds and clicks all buttons in the app
 
 # open browser
 chromedriver = "/usr/local/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
+# run headless
 options = Options()
 options.headless = True
 driver = webdriver.Chrome(chromedriver, options=options)
