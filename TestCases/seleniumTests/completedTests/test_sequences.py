@@ -1,31 +1,12 @@
 import os
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 # this tests difference sequences
 
-# legend
-# ac_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[2]/button")
-# minus_button = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[3]/button")
-# add_button = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[4]/button")
-# mult_button = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[2]/button")
-# divide_button = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[1]/button")
-# equal_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[1]/button")
-# zero_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[10]/button")
-# one_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[7]/button")
-# two_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[8]/button")
-# three_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[9]/button")
-# five_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[5]/button")
-# six_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[6]/button")
-# seven_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[1]/button")
-# eight_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button")
-# nine_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[3]/button")
-
-
 # open browser
-chromedriver = "/usr/local/bin/chromedriver"
-os.environ["webdriver.chrome.driver"] = chromedriver
-driver = webdriver.Chrome(chromedriver)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("http://localhost:5000")
 
 # begin test

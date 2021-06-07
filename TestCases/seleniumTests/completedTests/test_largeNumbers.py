@@ -1,17 +1,12 @@
 import os
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 import pytest
 
 # this tests large number input verses what the display box shows
 
 # open browser
-chromedriver = "/usr/local/bin/chromedriver"
-os.environ["webdriver.chrome.driver"] = chromedriver
-# run headless
-options = Options()
-options.headless = True
-driver = webdriver.Chrome(chromedriver, options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("http://localhost:5000")
 
 # begin test

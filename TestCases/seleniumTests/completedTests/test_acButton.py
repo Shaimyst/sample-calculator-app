@@ -1,17 +1,12 @@
 import os
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 import pytest
-from selenium.webdriver.chrome.options import Options
 
 # this test confirms AC button clears the display box
 
 # open browser
-chromedriver = "/usr/local/bin/chromedriver"
-os.environ["webdriver.chrome.driver"] = chromedriver
-# run headless
-options = Options()
-options.headless = True
-driver = webdriver.Chrome(chromedriver, options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("http://localhost:5000")
 
 # begin test

@@ -1,12 +1,11 @@
 import os
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 # this test runs all tests for buttons
 
 # open browser
-chromedriver = "/usr/local/bin/chromedriver"
-os.environ["webdriver.chrome.driver"] = chromedriver
-driver = webdriver.Chrome(chromedriver)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("http://localhost:5000")
 
 # begin test
