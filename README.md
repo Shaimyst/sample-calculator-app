@@ -17,12 +17,6 @@
 npm install
 ```
 
-### Install chromedriver
-
-```sh
-brew cask install chromedriver
-```
-
 ### Python installs with pipenv
 
 setup pipenv virtual-environment for project:    
