@@ -15,20 +15,15 @@ def test_correct_results():
 
     # enter '8 x 8 =' expected result '64'
 
-    eight_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button").text
-    mult_button = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[2]/button").text
-    equal_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[1]/button").text
+    eight_button = driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button")
+    mult_button = driver.find_element_by_xpath("/html/body/main/div/div[3]/div[2]/button")
+    equal_button = driver.find_element_by_xpath("/html/body/main/div/div[4]/div[1]/button")
 
-    driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button").click()
-    driver.find_element_by_xpath("/html/body/main/div/div[3]/div[2]/button").click()
-    driver.find_element_by_xpath("/html/body/main/div/div[2]/div[2]/button").click()
-    driver.find_element_by_xpath("/html/body/main/div/div[4]/div[1]/button").click()
+    eight_button.click()
+    mult_button.click()
+    eight_button.click()
+    equal_button.click()
     result = driver.find_element_by_xpath("/html/body/main/div/div[1]/div").text
-
-    #print which buttons were pressed
-    # print("Test data used:", eight_button, mult_button, eight_button, equal_button)
-    # print("Expected results: 64")
-    # print("Results given:", result)
 
     #close browser
     driver.quit()
