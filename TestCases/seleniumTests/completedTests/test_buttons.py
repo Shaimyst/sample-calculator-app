@@ -61,8 +61,5 @@ def test_button_color_change(browserdriver):
         t.click()
         color2 = t.value_of_css_property("background-color")
 
-    # close browser
-    browserdriver.quit()
-
     # assertion
     assert color1 is not color2, "No color change."
