@@ -3,7 +3,6 @@ import pytest
 
 # this test confirms AC button clears the display box
 
-# begin test
 def test_ac_button(browserdriver):
     browserdriver.get("http://localhost:5000")
 

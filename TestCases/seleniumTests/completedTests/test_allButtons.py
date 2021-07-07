@@ -2,7 +2,6 @@ import pytest
 
 # this test finds and clicks all buttons in the app
 
-# begin test
 def test_all_buttons(browserdriver):
     browserdriver.get("http://localhost:5000")
     tags = browserdriver.find_elements_by_tag_name('button')
