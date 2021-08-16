@@ -2,7 +2,6 @@ import pytest
 
 # this tests the multiplication function
 
-# begin test
 def test_correct_results(browserdriver):
     browserdriver.get("http://localhost:5000") 
 

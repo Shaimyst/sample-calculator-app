@@ -1,6 +1,5 @@
 # this test runs all tests for buttons
 
-# begin test
 def test_all_buttons(browserdriver):
     browserdriver.get("http://localhost:5000")
     tags = browserdriver.find_elements_by_tag_name('button')
@@ -17,7 +16,6 @@ def test_all_buttons(browserdriver):
     assert count > 15, "There are buttons missing"
     assert count < 17, "There are too many buttons"
 
-# begin test
 def test_ac_button(browserdriver):
 
     # enter test data
@@ -39,7 +37,6 @@ def test_ac_button(browserdriver):
     # assert display is 0
     assert display2 == str(0), "Display box did not clear!"
 
-# begin test
 def test_button_border(browserdriver):
 
     tags = browserdriver.find_elements_by_tag_name('button')
@@ -50,7 +47,6 @@ def test_button_border(browserdriver):
 
     assert buttonBorder == "4px solid rgb(0, 0, 0)", "Border is wrong"
 
-# begin test
 def test_button_color_change(browserdriver):
 
     # loop for finding all buttons and button colors before/after click

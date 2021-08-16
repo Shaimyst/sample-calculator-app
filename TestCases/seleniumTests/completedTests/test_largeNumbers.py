@@ -2,7 +2,6 @@ import pytest
 
 # this tests large number input verses what the display box shows
 
-# begin test
 def test_large_numbers(browserdriver):
     browserdriver.get("http://localhost:5000")
 

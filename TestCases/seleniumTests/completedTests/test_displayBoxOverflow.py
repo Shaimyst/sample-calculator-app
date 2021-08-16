@@ -2,7 +2,6 @@ import pytest
 
 # this tests if input runs outside the display box
 
-#begin test
 def test_display_box_overflow(browserdriver):
     browserdriver.get("http://localhost:5000")
 

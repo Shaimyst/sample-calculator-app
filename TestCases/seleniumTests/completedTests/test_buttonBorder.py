@@ -2,7 +2,6 @@ import pytest
 
 # this test confirms buttons have a black border
 
-# begin test
 def test_button_border(browserdriver):
     browserdriver.get("http://localhost:5000")
 

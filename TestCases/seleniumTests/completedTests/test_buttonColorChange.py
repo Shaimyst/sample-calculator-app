@@ -2,7 +2,6 @@ import pytest
 
 # this tests all button color changes
 
-# begin test
 def test_button_color_change(browserdriver):
     browserdriver.get("http://localhost:5000")
 
