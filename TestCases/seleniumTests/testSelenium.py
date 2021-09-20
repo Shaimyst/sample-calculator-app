@@ -7,5 +7,5 @@ chromedriver = "/usr/local/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 
-driver.get("http://dailymotion.com")
+driver.get("http://google.com")
 driver.quit()
